@@ -8,7 +8,7 @@ class PurchaseOrder(models.Model):
     warehouse_id=models.ForeignKey('InventoryServices.Warehouse',on_delete=models.CASCADE,related_name='warehouse_id')
     supplier_id=models.ForeignKey(Users,on_delete=models.CASCADE,related_name='supplier_id')
     po_code=models.CharField(max_length=255)
-    po_date=models.DateTimeField()
+    po_date=models.DateTimeField() 
     expected_delivery_date=models.DateTimeField()
     payment_terms=models.CharField(max_length=255,choices=[('CASH','CASH'),('CREDIT','CREDIT'),('ONLINE','ONLINE'),('CHEQUE','CHEQUE')],default='CASH')
     payment_status=models.CharField(max_length=255,choices=[('PAID','PAID'),('UNPAID','UNPAID'),('PARTIAL PAID','PARTIAL PAID'),('CANCELLED','CANCELLED')],default='UNPAID')
