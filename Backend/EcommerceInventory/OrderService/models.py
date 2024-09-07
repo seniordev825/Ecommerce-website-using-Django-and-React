@@ -4,7 +4,7 @@ from ProductServices.models import Products
 from UserServices.models import Users
 
 class PurchaseOrder(models.Model):
-    id=models.AutoField(primary_key=True)
+    id=models.AutoField(primary_key=True) 
     warehouse_id=models.ForeignKey('InventoryServices.Warehouse',on_delete=models.CASCADE,related_name='warehouse_id')
     supplier_id=models.ForeignKey(Users,on_delete=models.CASCADE,related_name='supplier_id')
     po_code=models.CharField(max_length=255)
