@@ -2,7 +2,7 @@ from django.db import models
 
 from UserServices.models import Users
 
-# Create your models here.
+# Create your models here. 
 class Categories(models.Model):
     id=models.AutoField(primary_key=True)
     name=models.CharField(max_length=255)
