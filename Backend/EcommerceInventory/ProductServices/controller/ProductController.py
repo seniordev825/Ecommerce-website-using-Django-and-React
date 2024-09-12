@@ -7,7 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.db.models import Q
 from django.db import models
-
+ 
 @createParsedCreatedAtUpdatedAt
 class ProductReviewSerializer(serializers.ModelSerializer):
     review_user_id=serializers.SerializerMethodField()
