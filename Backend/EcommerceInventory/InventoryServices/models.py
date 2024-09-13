@@ -6,7 +6,7 @@ from UserServices.models import Users
 
 # Create your models here.
 class Warehouse(models.Model):
-    id=models.AutoField(primary_key=True)
+    id=models.AutoField(primary_key=True) 
     name=models.CharField(max_length=255,blank=True,null=True)
     address=models.TextField()
     city=models.CharField(max_length=255)
