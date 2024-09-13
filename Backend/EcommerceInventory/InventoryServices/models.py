@@ -42,7 +42,7 @@ class RackAndShelvesAndFloor(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
-class Inventory(models.Model):
+class Inventory(models.Model): 
     id=models.AutoField(primary_key=True)
     purchase_order_id=models.ForeignKey(PurchaseOrder,on_delete=models.CASCADE,blank=True,null=True,related_name='purchase_order_id_inventory')
     purchase_order_item_id=models.ForeignKey(PurchaseOrderItems,on_delete=models.CASCADE,blank=True,null=True,related_name='purchase_order_item_id_inventory')
