@@ -59,7 +59,7 @@ class Inventory(models.Model):
     mfg_date=models.DateTimeField(blank=True,null=True)
     uom=models.CharField(max_length=255)
     ptr=models.CharField(max_length=255,blank=True,null=True)
-    received_date=models.DateTimeField(blank=True,null=True)
+    received_date=models.DateTimeField(blank=True,null=True) 
     expiry_date=models.DateTimeField(blank=True,null=True)
     quantity_inwarded=models.IntegerField()
     buy_price=models.DecimalField(max_digits=10,decimal_places=2)
