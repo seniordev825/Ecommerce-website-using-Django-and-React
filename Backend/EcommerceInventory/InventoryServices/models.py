@@ -4,7 +4,7 @@ from OrderService.models import PurchaseOrder, PurchaseOrderItemInwardedLog, Pur
 from ProductServices.models import Products
 from UserServices.models import Users
 
-# Create your models here.
+# Create your models here. 
 class Warehouse(models.Model):
     id=models.AutoField(primary_key=True)  
     name=models.CharField(max_length=255,blank=True,null=True)
