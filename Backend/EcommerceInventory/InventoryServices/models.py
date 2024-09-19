@@ -30,7 +30,7 @@ class Warehouse(models.Model):
         return "name" 
 
 class RackAndShelvesAndFloor(models.Model):
-    id=models.AutoField(primary_key=True)
+    id=models.AutoField(primary_key=True) 
     name=models.CharField(max_length=255,blank=True,null=True)
     warehouse_id=models.ForeignKey(Warehouse,on_delete=models.CASCADE,blank=True,null=True,related_name='warehouse_id_rack_shelf_floor')
     rack=models.CharField(max_length=255,blank=True,null=True)
