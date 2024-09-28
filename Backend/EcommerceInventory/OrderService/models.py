@@ -1,8 +1,7 @@
 from django.db import models
  
 from ProductServices.models import Products
-from UserServices.models import Users
- 
+from UserServices.models import Users 
 class PurchaseOrder(models.Model):
     id=models.AutoField(primary_key=True) 
     warehouse_id=models.ForeignKey('InventoryServices.Warehouse',on_delete=models.CASCADE,related_name='warehouse_id')
