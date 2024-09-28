@@ -38,7 +38,7 @@ class PurchaseOrderItems(models.Model):
     quantity_cancelled=models.IntegerField(default=0)
     quantity_returned=models.IntegerField(default=0)
     buying_price=models.DecimalField(max_digits=10,decimal_places=2,default=0)
-    selling_price=models.DecimalField(max_digits=10,decimal_places=2,default=0)
+    selling_price=models.DecimalField(max_digits=10,decimal_places=2,default=0) 
     discount_amount=models.DecimalField(max_digits=10,decimal_places=2,default=0)
     amount_paid=models.DecimalField(max_digits=10,decimal_places=2,default=0)
     amount_returned=models.DecimalField(max_digits=10,decimal_places=2,default=0)
