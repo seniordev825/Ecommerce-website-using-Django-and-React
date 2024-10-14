@@ -29,7 +29,7 @@ class PurchaseOrder(models.Model):
     def defaultkey():
         return "po_code"
 
-class PurchaseOrderItems(models.Model):
+class PurchaseOrderItems(models.Model): 
     id=models.AutoField(primary_key=True)
     po_id=models.ForeignKey(PurchaseOrder,on_delete=models.CASCADE,null=True,blank=True,related_name='po_id_purchase_order_items')
     product_id=models.ForeignKey(Products,on_delete=models.CASCADE,related_name='product_id_purchase_order_items')
