@@ -7,7 +7,7 @@ class IsSuperAdmin(BasePermission):
             return True
         return False
     
-    def __call__(self,request):
+    def __call__(self,request): 
         if not self.has_permission(request,None):
             return renderResponse(data='You are not authorized to access this page',message='You are not authorized to access this page',status=401)
         return None
