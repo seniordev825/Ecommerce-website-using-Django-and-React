@@ -70,7 +70,7 @@ class Modules(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
 
-
+ 
 class UserPermissions(models.Model):
     id=models.AutoField(primary_key=True)
     user=models.ForeignKey(Users,on_delete=models.CASCADE,related_name='user_permissions_1')
