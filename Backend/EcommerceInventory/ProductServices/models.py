@@ -19,7 +19,7 @@ class Categories(models.Model):
         return "name"
 
 
-class Products(models.Model):
+class Products(models.Model): 
     id=models.AutoField(primary_key=True)
     name=models.CharField(max_length=255,blank=True,null=True)
     image=models.JSONField()
